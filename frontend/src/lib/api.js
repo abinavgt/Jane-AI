@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let API_BASE = import.meta.env.VITE_API_URL || '';
+let API_BASE = import.meta.env.VITE_API_URL || 'https://jane-ai-1.onrender.com';
 if (API_BASE && !API_BASE.startsWith('http://') && !API_BASE.startsWith('https://')) {
   API_BASE = `https://${API_BASE}`;
 }
