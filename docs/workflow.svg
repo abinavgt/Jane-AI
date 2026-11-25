@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" width="100%" height="100%" style="background-color: #090d16; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1726" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#172033" stroke-width="0.8" opacity="0.6"/>
+  </pattern>
+  <rect width="1600" height="950" fill="url(#bgGlow)" />
+  <rect width="1600" height="950" fill="url(#grid)" />
+
+  <!-- Top Header Banner -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="30" width="1520" height="84" rx="14" fill="#101828" stroke="#2563eb" stroke-width="2" />
+    <!-- Jane AI Badge -->
+    <rect x="65" y="47" width="115" height="26" rx="6" fill="#EBF981" />
+    <text x="76" y="65" fill="#0a0a0a" font-size="12" font-weight="800" letter-spacing="1">JANE AI 2.0</text>
+    
+    <text x="195" y="66" fill="#ffffff" font-size="22" font-weight="bold">End-to-End Voice Counseling &amp; Autonomous Action Pipeline</text>
+    <text x="65" y="96" fill="#94a3b8" font-size="13">Real-Time Speech Interaction • Semantic RAG Course Retrieval • Dual LLM Reasoning • Autonomous Tool Calling • CRM Database Sync</text>
+  </g>
+
+  <!-- Card 1: Candidate Input -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="140" width="320" height="320" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="2" />
+    <path d="M 40 152 Q 40 140 52 140 L 348 140 Q 360 140 360 152 L 360 182 L 40 182 Z" fill="#141e37" />
+    <line x1="40" y1="182" x2="360" y2="182" stroke="#3b82f6" stroke-width="1" />
+    <text x="56" y="167" fill="#f1f5f9" font-size="16" font-weight="bold">1. Candidate Voice &amp; Query</text>
+    <rect x="290" y="150" width="56" height="22" rx="4" fill="#60a5fa" />
+    <text x="298" y="165" fill="#090d16" font-size="10" font-weight="bold">INPUT</text>
+    
+    <text x="56" y="212" fill="#e2e8f0" font-size="13" font-weight="600">• Microphone Audio (PCM 16-bit WAV)</text>
+    <text x="68" y="232" fill="#94a3b8" font-size="12">Direct browser Web Audio API stream</text>
+    <text x="56" y="260" fill="#e2e8f0" font-size="13" font-weight="600">• Instant Question Stack</text>
+    <text x="68" y="280" fill="#94a3b8" font-size="12">Curriculum, 0% EMI, Cloud GPU access</text>
+    <text x="56" y="308" fill="#e2e8f0" font-size="13" font-weight="600">• Placement &amp; Scholarship Queries</text>
+    <text x="56" y="336" fill="#e2e8f0" font-size="13" font-weight="600">• Supported Languages:</text>
+    <text x="68" y="356" fill="#EBF981" font-size="12" font-weight="bold">English (en-IN), Hindi (hi-IN), Tamil (ta-IN)</text>
+    <text x="56" y="386" fill="#94a3b8" font-size="12">• Live dialer cockpit &amp; copy candidate phone</text>
+  </g>
+
+  <!-- Card 2: STT Engine -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="485" width="320" height="250" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+    <path d="M 40 497 Q 40 485 52 485 L 348 485 Q 360 485 360 497 L 360 527 L 40 527 Z" fill="#132a24" />
+    <line x1="40" y1="527" x2="360" y2="527" stroke="#10b981" stroke-width="1" />
+    <text x="56" y="512" fill="#f1f5f9" font-size="16" font-weight="bold">2. Speech-to-Text (STT)</text>
+    <rect x="290" y="495" width="56" height="22" rx="4" fill="#34d399" />
+    <text x="302" y="510" fill="#090d16" font-size="10" font-weight="bold">AUDIO</text>
+    
+    <text x="56" y="557" fill="#e2e8f0" font-size="13" font-weight="600">• Python SpeechRecognition Pipeline</text>
+    <text x="68" y="577" fill="#94a3b8" font-size="12">Low-latency speech audio parsing</text>
+    <text x="56" y="605" fill="#e2e8f0" font-size="13" font-weight="600">• Sarvam AI Indian Speech API</text>
+    <text x="68" y="625" fill="#94a3b8" font-size="12">Accurate Hindi &amp; Tamil acoustic models</text>
+    <text x="56" y="653" fill="#e2e8f0" font-size="13" font-weight="600">• Multi-Turn Session Store</text>
+    <text x="68" y="673" fill="#94a3b8" font-size="12">UUID memory across counseling rounds</text>
+  </g>
+
+  <!-- Card 3: Semantic RAG Knowledge Base -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="140" width="420" height="320" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="2" />
+    <path d="M 400 152 Q 400 140 412 140 L 808 140 Q 820 140 820 152 L 820 182 L 400 182 Z" fill="#2d2212" />
+    <line x1="400" y1="182" x2="820" y2="182" stroke="#f59e0b" stroke-width="1" />
+    <text x="416" y="167" fill="#f1f5f9" font-size="16" font-weight="bold">3. Semantic RAG Knowledge Base</text>
+    <rect x="736" y="150" width="70" height="22" rx="4" fill="#fbbf24" />
+    <text x="746" y="165" fill="#090d16" font-size="10" font-weight="bold">RAG 0ms</text>
+    
+    <text x="416" y="212" fill="#EBF981" font-size="13" font-weight="bold">• InstantCourseRetriever (0 ms latency)</text>
+    <text x="428" y="232" fill="#94a3b8" font-size="12">Zero external network dependency, pure Python in-memory</text>
+    <text x="416" y="260" fill="#e2e8f0" font-size="13" font-weight="600">• ai_courses_catalog.txt</text>
+    <text x="428" y="280" fill="#94a3b8" font-size="12">AI/ML, GenAI, MLOps, curriculum, 0% EMI terms</text>
+    <text x="416" y="308" fill="#e2e8f0" font-size="13" font-weight="600">• course_objections_faq.txt</text>
+    <text x="428" y="328" fill="#94a3b8" font-size="12">Non-coding background, placement guarantee, job support</text>
+    <text x="416" y="356" fill="#e2e8f0" font-size="13" font-weight="600">• Keyword &amp; Entity Boosting</text>
+    <text x="428" y="376" fill="#94a3b8" font-size="12">Contextual RAG chunks injected into LLM system prompt</text>
+  </g>
+
+  <!-- Card 4: Dual LLM Reasoning Engine -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="485" width="420" height="250" rx="12" fill="#0f172a" stroke="#8b5cf6" stroke-width="2" />
+    <path d="M 400 497 Q 400 485 412 485 L 808 485 Q 820 485 820 497 L 820 527 L 400 527 Z" fill="#241b3a" />
+    <line x1="400" y1="527" x2="820" y2="527" stroke="#8b5cf6" stroke-width="1" />
+    <text x="416" y="512" fill="#f1f5f9" font-size="16" font-weight="bold">4. Dual LLM Reasoning Engine</text>
+    <rect x="705" y="495" width="100" height="22" rx="4" fill="#a78bfa" />
+    <text x="715" y="510" fill="#090d16" font-size="10" font-weight="bold">FAILOVER AI</text>
+    
+    <text x="416" y="557" fill="#EBF981" font-size="13" font-weight="bold">• Primary: Groq Llama 3.3 70B Versatile</text>
+    <text x="428" y="577" fill="#94a3b8" font-size="12">Ultra-fast sub-second token generation for real-time speech</text>
+    <text x="416" y="605" fill="#60a5fa" font-size="13" font-weight="bold">• Secondary: Google Gemini 1.5 Flash</text>
+    <text x="428" y="625" fill="#94a3b8" font-size="12">High-context multimodal fallback when limits exceeded</text>
+    <text x="416" y="653" fill="#34d399" font-size="13" font-weight="bold">• Offline Domain Counselor Fallback</text>
+    <text x="428" y="673" fill="#94a3b8" font-size="12">Rule &amp; template heuristics work even without API keys</text>
+  </g>
+
+  <!-- Card 5: Tool Calling & Automated Actions -->
+  <g filter="url(#shadow)">
+    <rect x="860" y="140" width="340" height="320" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="2" />
+    <path d="M 860 152 Q 860 140 872 140 L 1188 140 Q 1200 140 1200 152 L 1200 182 L 860 182 Z" fill="#2d1323" />
+    <line x1="860" y1="182" x2="1200" y2="182" stroke="#ec4899" stroke-width="1" />
+    <text x="876" y="167" fill="#f1f5f9" font-size="16" font-weight="bold">5. Tool Calling &amp; Actions</text>
+    <rect x="1100" y="150" width="86" height="22" rx="4" fill="#f472b6" />
+    <text x="1110" y="165" fill="#090d16" font-size="10" font-weight="bold">AUTONOMOUS</text>
+    
+    <text x="876" y="212" fill="#EBF981" font-size="13" font-weight="bold">• Tool: 1-on-1 Demo Booking</text>
+    <text x="888" y="232" fill="#94a3b8" font-size="12">Auto-locks mentor appointment into CRM</text>
+    <text x="876" y="260" fill="#e2e8f0" font-size="13" font-weight="600">• Tool: Lead Qualification Scoring (0-100)</text>
+    <text x="888" y="280" fill="#94a3b8" font-size="12">Evaluates career intent, budget &amp; timeline</text>
+    <text x="876" y="308" fill="#e2e8f0" font-size="13" font-weight="600">• Tool: Sentiment Analysis</text>
+    <text x="888" y="328" fill="#94a3b8" font-size="12">Positive, hesitant, skeptical sentiment tracking</text>
+    <text x="876" y="356" fill="#e2e8f0" font-size="13" font-weight="600">• Tool: WhatsApp Follow-Up &amp; RM Escalation</text>
+    <text x="888" y="376" fill="#94a3b8" font-size="12">Hot lead alert to Relationship Managers</text>
+  </g>
+
+  <!-- Card 6: Text-to-Speech (TTS) -->
+  <g filter="url(#shadow)">
+    <rect x="860" y="485" width="340" height="250" rx="12" fill="#0f172a" stroke="#0ea5e9" stroke-width="2" />
+    <path d="M 860 497 Q 860 485 872 485 L 1188 485 Q 1200 485 1200 497 L 1200 527 L 860 527 Z" fill="#0c2536" />
+    <line x1="860" y1="527" x2="1200" y2="527" stroke="#0ea5e9" stroke-width="1" />
+    <text x="876" y="512" fill="#f1f5f9" font-size="16" font-weight="bold">6. Text-to-Speech (TTS)</text>
+    <rect x="1108" y="495" width="78" height="22" rx="4" fill="#38bdf8" />
+    <text x="1120" y="510" fill="#090d16" font-size="10" font-weight="bold">VOICE OUT</text>
+    
+    <text x="876" y="557" fill="#e2e8f0" font-size="13" font-weight="600">• Native Indian Voice Synthesis</text>
+    <text x="888" y="577" fill="#94a3b8" font-size="12">Sarvam AI Bulbul TTS &amp; Web Speech API</text>
+    <text x="876" y="605" fill="#e2e8f0" font-size="13" font-weight="600">• Fluent Multilingual Output</text>
+    <text x="888" y="625" fill="#94a3b8" font-size="12">Natural cadence in English, Hindi, and Tamil</text>
+    <text x="876" y="653" fill="#e2e8f0" font-size="13" font-weight="600">• Audio Stream to Browser UI</text>
+    <text x="888" y="673" fill="#94a3b8" font-size="12">Zero-delay audio response in headphones</text>
+  </g>
+
+  <!-- Card 7: Database & CRM Layer -->
+  <g filter="url(#shadow)">
+    <rect x="1240" y="140" width="320" height="595" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+    <path d="M 1240 152 Q 1240 140 1252 140 L 1548 140 Q 1560 140 1560 152 L 1560 182 L 1240 182 Z" fill="#2b143d" />
+    <line x1="1240" y1="182" x2="1560" y2="182" stroke="#a855f7" stroke-width="1" />
+    <text x="1256" y="167" fill="#f1f5f9" font-size="16" font-weight="bold">7. Database &amp; CRM Layer</text>
+    <rect x="1465" y="150" width="80" height="22" rx="4" fill="#c084fc" />
+    <text x="1475" y="165" fill="#090d16" font-size="10" font-weight="bold">DATABASE</text>
+    
+    <text x="1256" y="215" fill="#EBF981" font-size="13" font-weight="bold">• SQLite / Supabase Async Engine</text>
+    <text x="1268" y="235" fill="#94a3b8" font-size="12">Persistent CRM records &amp; fast caching</text>
+    
+    <text x="1256" y="275" fill="#60a5fa" font-size="13" font-weight="bold">• Table: leads</text>
+    <text x="1268" y="295" fill="#94a3b8" font-size="12">Candidate name, phone, score, status</text>
+    
+    <text x="1256" y="335" fill="#34d399" font-size="13" font-weight="bold">• Table: appointments</text>
+    <text x="1268" y="355" fill="#94a3b8" font-size="12">Confirmed 1-on-1 mentor demo slots</text>
+    
+    <text x="1256" y="395" fill="#f472b6" font-size="13" font-weight="bold">• Table: calls &amp; call_events</text>
+    <text x="1268" y="415" fill="#94a3b8" font-size="12">Turn-by-turn dialogue, speaker &amp; sentiment</text>
+    
+    <text x="1256" y="455" fill="#e2e8f0" font-size="13" font-weight="600">• Live Caller Cockpit Sync</text>
+    <text x="1268" y="475" fill="#94a3b8" font-size="12">Side-by-side transcripts &amp; candidate cards</text>
+    
+    <text x="1256" y="515" fill="#e2e8f0" font-size="13" font-weight="600">• Automated Lead Triage</text>
+    <text x="1268" y="535" fill="#94a3b8" font-size="12">Hot (RM direct call), Warm (WhatsApp), Cold</text>
+    
+    <text x="1256" y="575" fill="#e2e8f0" font-size="13" font-weight="600">• Analytics &amp; Conversion Metrics</text>
+    <text x="1268" y="595" fill="#94a3b8" font-size="12">Demo conversion rate &amp; query categories</text>
+  </g>
+
+  <!-- Bottom Workflow Sequence Steps -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="760" width="1520" height="155" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2" />
+    <text x="65" y="792" fill="#EBF981" font-size="16" font-weight="bold">End-to-End Turn Sequence Workflow:</text>
+
+    <!-- Step 1 -->
+    <rect x="65" y="812" width="220" height="82" rx="8" fill="#18243e" stroke="#3b82f6" stroke-width="1.2" />
+    <text x="77" y="830" fill="#60a5fa" font-size="11" font-weight="bold">STEP 1</text>
+    <text x="77" y="852" fill="#f1f5f9" font-size="15" font-weight="bold">Mic Audio Upload</text>
+    <text x="77" y="876" fill="#94a3b8" font-size="12">Web Audio PCM Stream</text>
+    <path d="M 292 853 L 306 853 M 302 849 L 306 853 L 302 857" stroke="#EBF981" stroke-width="2" fill="none" />
+
+    <!-- Step 2 -->
+    <rect x="315" y="812" width="220" height="82" rx="8" fill="#18243e" stroke="#10b981" stroke-width="1.2" />
+    <text x="327" y="830" fill="#34d399" font-size="11" font-weight="bold">STEP 2</text>
+    <text x="327" y="852" fill="#f1f5f9" font-size="15" font-weight="bold">STT Transcription</text>
+    <text x="327" y="876" fill="#94a3b8" font-size="12">SpeechRecog / Sarvam</text>
+    <path d="M 542 853 L 556 853 M 552 849 L 556 853 L 552 857" stroke="#EBF981" stroke-width="2" fill="none" />
+
+    <!-- Step 3 -->
+    <rect x="565" y="812" width="220" height="82" rx="8" fill="#18243e" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="577" y="830" fill="#fbbf24" font-size="11" font-weight="bold">STEP 3</text>
+    <text x="577" y="852" fill="#f1f5f9" font-size="15" font-weight="bold">RAG Retrieval (0ms)</text>
+    <text x="577" y="876" fill="#94a3b8" font-size="12">InstantCourseRetriever</text>
+    <path d="M 792 853 L 806 853 M 802 849 L 806 853 L 802 857" stroke="#EBF981" stroke-width="2" fill="none" />
+
+    <!-- Step 4 -->
+    <rect x="815" y="812" width="220" height="82" rx="8" fill="#18243e" stroke="#8b5cf6" stroke-width="1.2" />
+    <text x="827" y="830" fill="#a78bfa" font-size="11" font-weight="bold">STEP 4</text>
+    <text x="827" y="852" fill="#f1f5f9" font-size="15" font-weight="bold">Dual LLM Reasoning</text>
+    <text x="827" y="876" fill="#94a3b8" font-size="12">Groq / Gemini / Offline</text>
+    <path d="M 1042 853 L 1056 853 M 1052 849 L 1056 853 L 1052 857" stroke="#EBF981" stroke-width="2" fill="none" />
+
+    <!-- Step 5 -->
+    <rect x="1065" y="812" width="220" height="82" rx="8" fill="#18243e" stroke="#ec4899" stroke-width="1.2" />
+    <text x="1077" y="830" fill="#f472b6" font-size="11" font-weight="bold">STEP 5</text>
+    <text x="1077" y="852" fill="#f1f5f9" font-size="15" font-weight="bold">Tool Call &amp; Action</text>
+    <text x="1077" y="876" fill="#94a3b8" font-size="12">Demo Booking &amp; Scoring</text>
+    <path d="M 1292 853 L 1306 853 M 1302 849 L 1306 853 L 1302 857" stroke="#EBF981" stroke-width="2" fill="none" />
+
+    <!-- Step 6 -->
+    <rect x="1315" y="812" width="220" height="82" rx="8" fill="#18243e" stroke="#0ea5e9" stroke-width="1.2" />
+    <text x="1327" y="830" fill="#38bdf8" font-size="11" font-weight="bold">STEP 6</text>
+    <text x="1327" y="852" fill="#f1f5f9" font-size="15" font-weight="bold">TTS Voice Playback</text>
+    <text x="1327" y="876" fill="#94a3b8" font-size="12">Browser Audio Synthesis</text>
+  </g>
+</svg>
