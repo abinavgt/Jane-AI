@@ -59,7 +59,10 @@ async def get_llm_response(
     call_id: Optional[str] = None,
 ) -> dict:
     """Smart LLM router with fast failover and intelligent domain fallback."""
-    from langchain.schema import HumanMessage, SystemMessage
+    try:
+        from langchain_core.messages import HumanMessage, SystemMessage
+    except ImportError:
+        from langchain.schema import HumanMessage, SystemMessage
 
     messages = [
         SystemMessage(content=system_prompt),

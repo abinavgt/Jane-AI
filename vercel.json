@@ -1,6 +1,4 @@
 {
-  "buildCommand": null,
-  "installCommand": null,
   "builds": [
     {
       "src": "frontend/package.json",
@@ -11,25 +9,17 @@
     },
     {
       "src": "backend/main.py",
-      "use": "@vercel/python",
-      "config": {
-        "installCommand": "pip install -r requirements.txt"
-      }
+      "use": "@vercel/python"
     }
   ],
   "rewrites": [
     {
-      "source": "/_/backend/(.*)",
+      "source": "/(voice|leads|calls|dashboard|webhooks|health)(.*)",
       "destination": "/backend/main.py"
     },
     {
       "source": "/(.*)",
       "destination": "/frontend/$1"
     }
-  ],
-  "functions": {
-    "backend/**/*.py": {
-      "runtime": "python3.11"
-    }
-  }
+  ]
 }

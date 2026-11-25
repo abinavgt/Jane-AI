@@ -9,7 +9,10 @@ from __future__ import annotations
 import io
 import logging
 from typing import Optional
-import speech_recognition as sr
+try:
+    import speech_recognition as sr
+except ImportError:
+    sr = None
 from pydantic import BaseModel, Field
 from fastapi import APIRouter, HTTPException, UploadFile, File, Form
 
@@ -116,6 +119,8 @@ async def transcribe_audio_endpoint(
     Transcribe microphone audio recorded directly in the browser.
     Uses Python SpeechRecognition with multi-language fallback.
     """
+    if sr is None:
+        return {"transcript": "", "success": False, "error": "SpeechRecognition package not installed."}
     r = sr.Recognizer()
     r.energy_threshold = 300
     r.dynamic_energy_threshold = True

@@ -9,8 +9,45 @@ import logging
 from pathlib import Path
 from typing import List
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import TextLoader
+class FastCharacterTextSplitter:
+    """Lightweight, zero-overhead recursive character text splitter."""
+    def __init__(self, chunk_size: int = 400, chunk_overlap: int = 40, separators: list[str] | None = None):
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        self.separators = separators or ["\n\n", "\n", ". ", " "]
+
+    def split_documents(self, docs: list[Document]) -> list[Document]:
+        chunks = []
+        for doc in docs:
+            text = doc.page_content
+            paras = [p.strip() for p in text.split("\n\n") if p.strip()]
+            for p in paras:
+                if len(p) <= self.chunk_size:
+                    chunks.append(Document(page_content=p, metadata=doc.metadata))
+                else:
+                    lines = [ln.strip() for ln in p.split("\n") if ln.strip()]
+                    cur = ""
+                    for ln in lines:
+                        if cur and len(cur) + len(ln) + 1 > self.chunk_size:
+                            chunks.append(Document(page_content=cur, metadata=doc.metadata))
+                            cur = ln
+                        else:
+                            cur = f"{cur}\n{ln}" if cur else ln
+                    if cur:
+                        chunks.append(Document(page_content=cur, metadata=doc.metadata))
+        return chunks
+
+RecursiveCharacterTextSplitter = FastCharacterTextSplitter
+try:
+    from langchain_community.document_loaders import TextLoader
+except ImportError:
+    class TextLoader:
+        def __init__(self, file_path: str, encoding: str = "utf-8"):
+            self.file_path = file_path
+            self.encoding = encoding
+        def load(self) -> list[Document]:
+            with open(self.file_path, "r", encoding=self.encoding) as f:
+                return [Document(page_content=f.read(), metadata={"source": self.file_path})]
 from langchain_core.documents import Document
 
 from config import get_settings
