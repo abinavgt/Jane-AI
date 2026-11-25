@@ -1,16 +1,11 @@
 {
-  "name": "jane-ai",
+  "name": "jane-ai-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Jane AI - Multilingual AI Course Voice Counseling Agent",
+  "description": "Jane AI - Multilingual AI Course Voice Counseling Backend",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "npx serve -s frontend/dist -l $PORT",
-    "dev": "npm run dev:frontend",
-    "dev:frontend": "cd frontend && npm run dev",
+    "start": "python -m uvicorn main:app --host 0.0.0.0 --port $PORT || uvicorn main:app --host 0.0.0.0 --port $PORT",
+    "build": "python -m pip install -r requirements.txt || pip install -r requirements.txt",
     "dev:backend": "cd backend && python -m uvicorn main:app --reload --port 8000"
-  },
-  "dependencies": {
-    "serve": "^14.2.4"
   }
 }
