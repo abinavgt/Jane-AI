@@ -1,0 +1,43 @@
+import axios from 'axios';
+
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
+const api = axios.create({
+  baseURL: API_BASE,
+  timeout: 30000,
+  headers: { 'Content-Type': 'application/json' },
+});
+
+// ── Voice & Real-time Interaction ───────────────────────────
+export const voiceChat = (data) => api.post('/voice/chat', data).then(r => r.data);
+export const bookAppointmentDirect = (data) => api.post('/voice/book-appointment', data).then(r => r.data);
+export const transcribeAudio = (formData) =>
+  api.post('/voice/transcribe', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+  }).then(r => r.data);
+
+// ── Leads ────────────────────────────────────────────────────
+export const createLead = (data) => api.post('/leads/new', data).then(r => r.data);
+export const getLeads = (params) => api.get('/leads', { params }).then(r => r.data);
+export const getLead = (id) => api.get(`/leads/${id}`).then(r => r.data);
+export const seedDemoLeads = () => api.post('/leads/demo/seed').then(r => r.data);
+
+// ── Calls ────────────────────────────────────────────────────
+export const getCalls = (params) => api.get('/calls', { params }).then(r => r.data);
+export const getCallDetail = (id) => api.get(`/calls/${id}`).then(r => r.data);
+
+// ── Dashboard & Courses ──────────────────────────────────────
+export const getDashboardStats = () => api.get('/dashboard/stats').then(r => r.data);
+export const getCourses = () => api.get('/dashboard/courses').then(r => r.data);
+export const getAppointments = () => api.get('/dashboard/appointments').then(r => r.data);
+export const updateAppointmentStatus = (id, status) =>
+  api.put(`/dashboard/appointments/${id}/status`, null, { params: { status } }).then(r => r.data);
+
+// Backward compatibility alias for rm queue
+export const getRmQueue = () => api.get('/dashboard/appointments').then(r => ({ queue: r.data }));
+export const updateRmStatus = (id, status) => updateAppointmentStatus(id, status);
+
+// ── Health ───────────────────────────────────────────────────
+export const getHealth = () => api.get('/health').then(r => r.data);
+
+export default api;

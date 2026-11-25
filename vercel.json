@@ -1,0 +1,35 @@
+{
+  "buildCommand": null,
+  "installCommand": null,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
+      "src": "backend/main.py",
+      "use": "@vercel/python",
+      "config": {
+        "installCommand": "pip install -r requirements.txt"
+      }
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/_/backend/(.*)",
+      "destination": "/backend/main.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/$1"
+    }
+  ],
+  "functions": {
+    "backend/**/*.py": {
+      "runtime": "python3.11"
+    }
+  }
+}

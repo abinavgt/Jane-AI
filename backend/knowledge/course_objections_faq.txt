@@ -1,0 +1,32 @@
+RISE AI ACADEMY — COURSE OBJECTIONS & FREQUENTLY ASKED QUESTIONS (FAQ)
+========================================================================
+
+OBJECTION: no_coding_background
+TRIGGER PHRASES: "I don't know coding", "I have non-tech background", "I am from commerce/mechanical/arts", "never coded in python", "is math too hard"
+REBUTTAL: That is completely fine! Over 40% of our successful alumni come from non-computer science backgrounds including mechanical engineering, commerce, marketing, and arts. All our programs include a complimentary 4-week Zero-to-Hero Python and Mathematics foundation module. Our instructors start from the very basics, and you get dedicated 1-on-1 mentor support throughout the week to ensure you never get stuck.
+FOLLOW UP: "Would you like to book a free 1-on-1 demo session with our academic counselor so they can review your background and recommend the best roadmap?"
+
+OBJECTION: course_fee_high
+TRIGGER PHRASES: "fees is too high", "expensive", "cannot afford right now", "cost is high", "do you have discounts", "scholarship"
+REBUTTAL: We completely understand budget is an important consideration. To make quality AI education accessible, we offer 0% interest monthly EMI plans starting at just ₹3,750 per month with zero processing fees. Furthermore, if you take our quick 15-minute online AI Aptitude Test, you can qualify for up to 30% merit scholarship! With average AI salaries ranging from ₹12 to ₹24 LPA, our students typically recover their entire investment within their first two paychecks.
+FOLLOW UP: "Can I register you for the free Scholarship Assessment or schedule a counseling call to discuss custom EMI options?"
+
+OBJECTION: time_commitment_busy
+TRIGGER PHRASES: "I am working full time", "busy with job", "don't have time", "schedule is packed", "college exams coming"
+REBUTTAL: Our curriculum is specifically crafted for busy working professionals and university students! Live interactive classes happen exclusively on Saturdays and Sundays (3 hours per day). Every single class is recorded in 4K HD and uploaded to your student portal with lifetime access, notes, and code repositories. You only need to dedicate 5 to 6 hours a week at your convenience. If you miss a class, you can rewatch it or attend the repeat session in the next cohort for free.
+FOLLOW UP: "Would weekend batch timings from 10 AM to 1 PM suit your routine?"
+
+OBJECTION: placement_doubt
+TRIGGER PHRASES: "will I get a job", "placement guarantee", "job support", "what if I don't get placed", "fake promises", "companies hiring"
+REBUTTAL: We stand 100% behind our curriculum! We have a formal placement partnership with over 350+ top tech companies including Google, Microsoft, Amazon, Swiggy, Deloitte, and fast-growing AI startups. Every student who completes the capstone projects receives a minimum guarantee of 5 scheduled interview calls. Our career cell works with you until you are placed — including mock technical interviews, resume transformation, and portfolio building.
+FOLLOW UP: "Would you like me to share our latest placement report with verified alumni LinkedIn profiles and hiring company list?"
+
+OBJECTION: self_learning_youtube
+TRIGGER PHRASES: "can learn from youtube", "free tutorials available", "coursera is cheaper", "why pay when internet has everything"
+REBUTTAL: While YouTube and blogs are great for conceptual overviews, learning enterprise-ready AI requires hands-on engineering, dedicated GPU compute infrastructure, code reviews, and structured debugging. At Rise AI Academy, you get free high-end cloud GPU access, real-time code reviews from Senior AI Engineers, production MLOps deployment experience, and direct placement referrals to top companies. Self-learners often get stuck in tutorial hell for years without building a portfolio that recruiters respect.
+FOLLOW UP: "Would you like to attend a live weekend masterclass demo to experience the teaching methodology firsthand?"
+
+OBJECTION: language_preference
+TRIGGER PHRASES: "can you explain in Hindi", "Tamil la solla mudiyuma", "do you have regional language support", "prefer Hindi", "prefer Tamil"
+REBUTTAL: Absolutely! While the industry code and technical terms are in English, our instructors and mentors provide bilingual explanations in Hindi and Tamil to ensure 100% conceptual clarity. You can ask doubts freely in Hindi, Tamil, or English during live sessions and 1-on-1 mentor calls.
+FOLLOW UP: "Would you like to speak with a mentor who can walk you through the syllabus in your preferred language?"

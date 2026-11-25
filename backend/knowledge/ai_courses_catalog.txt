@@ -1,0 +1,85 @@
+RISE AI ACADEMY — FLAGSHIP AI & MACHINE LEARNING COURSES CATALOG
+========================================================================
+
+ABOUT RISE AI ACADEMY:
+Rise AI Academy is India's premier immersive training institute for Artificial Intelligence, Machine Learning, and Generative AI. We bridge the gap between academic theory and enterprise production deployment through hands-on capstone engineering, GPU cloud labs, and personalized 1-on-1 mentorship by Senior AI Engineers from Google, Microsoft, and leading AI unicorns.
+
+------------------------------------------------------------------------
+PROGRAM 1: EXECUTIVE MASTERCLASS IN GENERATIVE AI & LLMs (FLAGSHIP)
+------------------------------------------------------------------------
+• Duration: 4 Months (16 Weeks)
+• Format: Live Interactive Weekend Classes (Sat & Sun: 10 AM - 1 PM) + Lifetime LMS Access
+• Level: Intermediate to Advanced
+• Tuition Fee: ₹45,000 (Early Bird: ₹36,000 | 20% discount).
+• Flexible EMI: Starting at ₹3,750/month with 0% interest and zero down payment.
+• Key Modules:
+  1. Deep Dive into Transformers & Attention Mechanisms (BERT, GPT, Claude, Llama 3)
+  2. Advanced Prompt Engineering & In-Context Learning Techniques
+  3. Enterprise RAG Systems: Chunking, Hybrid Search, Vector DBs (ChromaDB, Pinecone, FAISS), Re-ranking
+  4. Autonomous Multi-Agent Workflows: LangChain, LangGraph, CrewAI, AutoGen
+  5. Open-Source LLM Fine-Tuning: PEFT, LoRA, QLoRA, Axolotl, Unsloth on A100 GPUs
+  6. LLM Evaluation, Safety, Guardrails & Production Deployment (FastAPI, Docker, Triton)
+• Capstone Projects:
+  - Enterprise Multilingual RAG Assistant for Legal & Medical Document Querying
+  - Multi-Agent Autonomous Market Research & Financial Analyst Swarm
+  - Fine-Tuning Llama-3 8B on Custom Domain Corpus with Evaluation Benchmarks
+• Career Outcomes: Generative AI Engineer, LLM Application Architect, AI Product Consultant (Average CTC: ₹14-26 LPA)
+
+------------------------------------------------------------------------
+PROGRAM 2: FULL-STACK MACHINE LEARNING & MLOps SPECIALIZATION
+------------------------------------------------------------------------
+• Duration: 6 Months (24 Weeks)
+• Format: Live Weekend Sessions + Midweek Doubt Clearing Hours
+• Level: Beginner to Advanced
+• Tuition Fee: ₹55,000 (Early Bird: ₹46,750 | 15% discount).
+• Flexible EMI: Starting at ₹4,580/month with 0% interest.
+• Key Modules:
+  1. Python for Data Science & Applied Statistics (NumPy, Pandas, SciPy, Matplotlib)
+  2. Supervised & Unsupervised Machine Learning (Regression, Random Forests, XGBoost, Clustering)
+  3. Deep Learning Foundations with PyTorch & TensorFlow (CNNs, RNNs, LSTMs)
+  4. Computer Vision Engineering (YOLOv8, Object Detection, Segmentation, OpenCV)
+  5. Natural Language Processing (Tokenization, Word2Vec, Sentiment Analysis, Hugging Face)
+  6. Enterprise MLOps: Experiment Tracking (MLflow, Weights & Biases), Model Registry, Data Versioning (DVC), Automated Pipelines with Kubeflow & Airflow, Kubernetes deployment.
+• Capstone Projects:
+  - Real-Time Computer Vision Defect Detection Pipeline for Smart Manufacturing
+  - End-to-End High-Frequency Financial Fraud Detection & Automated MLOps Retraining Pipeline
+• Career Outcomes: Machine Learning Engineer, MLOps Engineer, Senior Data Scientist (Average CTC: ₹12-24 LPA)
+
+------------------------------------------------------------------------
+PROGRAM 3: FOUNDATIONS OF PYTHON, DATA SCIENCE & AI FOR BEGINNERS
+------------------------------------------------------------------------
+• Duration: 3 Months (12 Weeks)
+• Format: Live Interactive Evening & Weekend Batches
+• Level: Absolute Beginners (Zero Coding Required)
+• Tuition Fee: ₹25,000 (Early Bird: ₹20,000).
+• Flexible EMI: Starting at ₹2,500/month with 0% interest.
+• Key Modules:
+  1. Python Zero-to-Hero Programming (Syntax, Data Structures, OOPs, File I/O)
+  2. Essential Mathematics & Statistics for AI (Linear Algebra, Calculus, Probability)
+  3. Exploratory Data Analysis & Visualization (Pandas, Seaborn, Plotly)
+  4. Hands-on Machine Learning Kickstart (Scikit-Learn, Predictive Modeling)
+• Career Outcomes: Junior Data Analyst, Python Developer, AI Associate (Average CTC: ₹6-10 LPA)
+
+------------------------------------------------------------------------
+PLACEMENT ASSISTANCE & CAREER GUARANTEE
+------------------------------------------------------------------------
+• 100% Placement Assistance with 350+ Global Hiring Partners (including Microsoft, Google, Amazon, Swiggy, Zomato, Deloitte, Infosys, Tech Mahindra, and funded AI startups).
+• Minimum 5 Guaranteed Interview Calls for all students completing course capstones.
+• Dedicated Career Coach:
+  - 1-on-1 Resume Re-engineering tailored for AI/ML roles
+  - GitHub portfolio optimization & enterprise-grade project READMEs
+  - LinkedIn personal branding to attract inbound recruiters
+  - 3 Technical Mock Interviews with ex-FAANG AI Leads
+• High Placement Track Record:
+  - Average Alumni CTC: ₹12.4 LPA
+  - Highest CTC Achieved: ₹38 LPA
+  - 89% of students secure job offers within 90 days of graduation
+
+------------------------------------------------------------------------
+STUDENT SUPPORT & SCHOLARSHIPS
+------------------------------------------------------------------------
+• Merit-Based AI Aptitude Scholarship: Up to 30% tuition waiver upon taking our free 15-minute online AI aptitude assessment.
+• Unlimited 1-on-1 Mentorship: Weekly dedicated office hours with industry practitioners.
+• Dedicated Cloud GPU Access: Free cloud GPU compute credits (NVIDIA A10G/T4) on AWS/Google Cloud during the course.
+• Recognized Certification: Industry-accredited Certificate of Completion with digital verification badge for LinkedIn.
+• 1-on-1 Counseling & Free Demo Class: Prospective students can book a free 30-minute 1-on-1 demo and syllabus walkthrough with a Senior AI Counselor.
