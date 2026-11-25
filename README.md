@@ -46,6 +46,12 @@ The working prototype integrates **Speech-to-Text (STT)**, **Semantic RAG Knowle
 5. **🗣️ Text-to-Speech (TTS) Voice Synthesis**: Generates audio responses with Sarvam AI Bulbul TTS and browser speech synthesis, streaming audio directly to the candidate while syncing metrics in real-time to the caller cockpit.
 6. **💾 Database & CRM Layer**: State and multi-turn records are persisted across `leads`, `calls`, `call_events`, and `appointments` tables in SQLite / Supabase.
 
+### 📋 High-Level Execution Order
+
+<p align="center">
+  <img src="docs/execution_order.png" alt="Jane AI High-Level Sequential Execution Order" width="100%" />
+</p>
+
 ---
 
 ## ✨ Key Features
