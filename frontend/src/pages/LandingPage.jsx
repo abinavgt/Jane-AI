@@ -39,8 +39,8 @@ export default function LandingPage() {
                   <LiquidGlassCard />
                 </div>
 
-                <h1 className="text-[26vw] sm:text-[24vw] md:text-[22vw] lg:text-[20vw] xl:text-[19vw] 2xl:text-[20vw] font-medium leading-[0.85] tracking-[-0.07em] text-[#E1E0CC]">
-                  <WordsPullUp text="Jane AI" showAsterisk />
+                <h1 className="text-[12vw] sm:text-[10vw] md:text-[8.5vw] lg:text-[7vw] xl:text-[6.5vw] 2xl:text-[6vw] font-medium leading-[0.95] tracking-[-0.04em] text-[#E1E0CC] whitespace-nowrap">
+                  <WordsPullUp text="Jane AI" showAsterisk className="whitespace-nowrap flex-nowrap" />
                 </h1>
               </div>
 

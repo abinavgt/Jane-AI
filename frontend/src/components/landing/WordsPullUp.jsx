@@ -8,7 +8,7 @@ export default function WordsPullUp({ text, className = '', showAsterisk = false
   const words = text.split(' ');
 
   return (
-    <span ref={ref} className={`inline-flex flex-wrap ${className}`}>
+    <span ref={ref} className={`inline-flex flex-nowrap items-baseline whitespace-nowrap ${className}`}>
       {words.map((word, i) => {
         const isLast = i === words.length - 1;
         return (
@@ -21,7 +21,7 @@ export default function WordsPullUp({ text, className = '', showAsterisk = false
               duration: 0.6,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="inline-block mr-[0.25em] relative"
+            className="inline-block mr-[0.25em] relative whitespace-nowrap"
           >
             {word}
             {showAsterisk && isLast && (
