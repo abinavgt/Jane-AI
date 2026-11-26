@@ -1,6 +1,14 @@
 import axios from 'axios';
 
-let API_BASE = import.meta.env.VITE_API_URL || 'https://jane-ai-1.onrender.com';
+const isLocalhost = typeof window !== 'undefined' && 
+  (window.location.hostname === 'localhost' || 
+   window.location.hostname === '127.0.0.1' || 
+   window.location.hostname === '');
+
+let API_BASE = isLocalhost 
+  ? '' 
+  : (import.meta.env.VITE_API_URL || 'https://jane-ai-1.onrender.com');
+
 if (API_BASE && !API_BASE.startsWith('http://') && !API_BASE.startsWith('https://')) {
   API_BASE = `https://${API_BASE}`;
 }
